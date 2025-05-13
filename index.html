@@ -15,13 +15,13 @@
       --accent: #ff8906;
       --tertiary: #e53170;
     }
-
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
+    
     body {
       font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--dark);
@@ -33,7 +33,7 @@
         radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.1) 0px, transparent 50%),
         radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.1) 0px, transparent 50%);
     }
-
+    
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -44,13 +44,13 @@
       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
-
+    
     header {
       text-align: center;
       margin-bottom: 3rem;
       position: relative;
     }
-
+    
     .profile-pic {
       width: 120px;
       height: 120px;
@@ -60,7 +60,7 @@
       margin-bottom: 1.5rem;
       box-shadow: 0 0 0 4px rgba(110, 69, 226, 0.2);
     }
-
+    
     header::after {
       content: '';
       display: block;
@@ -70,7 +70,7 @@
       margin: 2rem auto;
       border-radius: 2px;
     }
-
+    
     h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
@@ -80,7 +80,7 @@
       color: transparent;
       letter-spacing: -0.5px;
     }
-
+    
     .title {
       font-size: 1.2rem;
       color: var(--secondary);
@@ -88,7 +88,7 @@
       font-weight: 400;
       opacity: 0.9;
     }
-
+    
     h2 {
       font-size: 1.6rem;
       margin: 2rem 0 1.2rem;
@@ -97,7 +97,7 @@
       display: inline-block;
       letter-spacing: -0.5px;
     }
-
+    
     h2::after {
       content: '';
       position: absolute;
@@ -108,19 +108,19 @@
       background: var(--accent);
       border-radius: 2px;
     }
-
+    
     ul {
       list-style: none;
       padding-left: 1.2rem;
     }
-
+    
     li {
       margin-bottom: 1rem;
       position: relative;
       padding-left: 1.8rem;
       font-size: 1.05rem;
     }
-
+    
     li::before {
       content: '▹';
       position: absolute;
@@ -128,7 +128,7 @@
       color: var(--accent);
       font-size: 1.2rem;
     }
-
+    
     a {
       color: var(--secondary);
       text-decoration: none;
@@ -136,11 +136,11 @@
       position: relative;
       font-weight: 500;
     }
-
+    
     a:hover {
       color: var(--accent);
     }
-
+    
     a::after {
       content: '';
       position: absolute;
@@ -151,11 +151,11 @@
       background: var(--accent);
       transition: width 0.3s ease;
     }
-
+    
     a:hover::after {
       width: 100%;
     }
-
+    
     .social-links {
       display: flex;
       gap: 1.8rem;
@@ -163,7 +163,7 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-
+    
     .social-links a {
       font-size: 1.6rem;
       color: var(--light);
@@ -177,14 +177,14 @@
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-
+    
     .social-links a:hover {
       transform: translateY(-5px);
       color: var(--accent);
       background: rgba(255, 137, 6, 0.1);
       box-shadow: 0 5px 15px rgba(255, 137, 6, 0.2);
     }
-
+    
     .project-card {
       background: rgba(255, 255, 255, 0.03);
       border-radius: 16px;
@@ -193,14 +193,14 @@
       transition: all 0.4s ease;
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
-
+    
     .project-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
       background: rgba(255, 255, 255, 0.05);
       border-color: rgba(110, 69, 226, 0.3);
     }
-
+    
     .project-title {
       font-size: 1.3rem;
       margin-bottom: 0.8rem;
@@ -208,19 +208,18 @@
       align-items: center;
       gap: 0.8rem;
     }
-
+    
     .project-title i {
       color: var(--accent);
       font-size: 1.4rem;
     }
-
+    
     .project-card p {
       color: rgba(255, 255, 255, 0.7);
       line-height: 1.7;
     }
-
-    /* New styles for ZenChain promotion and donate button */
-    .promo-btn {
+    
+    .wallet-btn {
       background: linear-gradient(135deg, var(--primary), #8a2be2);
       color: white;
       border: none;
@@ -228,78 +227,107 @@
       border-radius: 8px;
       font-weight: 600;
       cursor: pointer;
-      margin: 2rem auto;
-      display: block;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 2rem auto 0;
       transition: all 0.3s ease;
       box-shadow: 0 4px 14px rgba(110, 69, 226, 0.3);
     }
-
-    .promo-btn:hover {
+    
+    .wallet-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(110, 69, 226, 0.4);
     }
-
-    .donate-btn {
-      background: linear-gradient(135deg, #ff8906, #ff6f00);
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-      margin-top: 1rem;
-      display: block;
-      text-align: center;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 14px rgba(255, 137, 6, 0.3);
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-
-    .donate-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(255, 137, 6, 0.4);
+    
+    .animate {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        padding: 1.5rem;
+      }
+      
+      .container {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+      }
+      
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      .project-card {
+        padding: 1.4rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
+    <header class="animate">
+      <img src="https://i.imgur.com/FqaOqlR.jpeg" alt="Foto Profil" class="profile-pic">
       <h1>Zafransszzz</h1>
       <p class="title">Web3 Frontend Developer & ZenChain Builder</p>
+      <button class="wallet-btn animate delay-1" onclick="connectWallet()">
+        <i class="fas fa-wallet"></i> Connect Wallet
+      </button>
     </header>
-
-    <section>
-      <h2>Join ZenChain Testnet</h2>
-      <p>Use my referral to join the ZenChain Testnet and start your blockchain adventure now!</p>
-      <a class="promo-btn" href="https://zenquest.zenchain.io?referral=Xt81EXFysqn730NeXr-so8J_pXiloBk3eEB_edepr80" target="_blank">Join ZenChain Testnet</a>
+    
+    <section class="animate delay-1">
+      <h2>My Skills</h2>
+      <ul class="skills">
+        <li>HTML5, CSS3 & JavaScript (ES6+)</li>
+        <li>React.js & Next.js for Web3 Applications</li>
+        <li>Responsive & Adaptive Web Design</li>
+        <li>Git & GitHub Version Control</li>
+        <li>Web3.js, Ethers.js & Wallet Integration</li>
+        <li>Smart Contract Interaction (Ethereum, ZenChain)</li>
+        <li>Decentralized Application (dApp) Development</li>
+      </ul>
     </section>
-
-    <section>
-      <h2>Donate for Coffee</h2>
-      <p>Support me with a donation through Ethereum to help me continue creating in the Web3 space.</p>
-      <a class="donate-btn" href="https://etherscan.io/address/0x1edad0ab9df5db0b17543e58078ee15d8b576ed2" target="_blank">Donate to My Ethereum Wallet</a>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
+    
+    <section class="animate delay-2">
+      <h2>My Projects</h2>
       <div class="project-card">
         <div class="project-title">
-          <i class="fas fa-cogs"></i>
-          <span>ZenChain NFT Mint</span>
+          <i class="fas fa-cube"></i>
+          <a href="https://zafransszzz.github.io/Web3-Foundation/" target="_blank">Web3 Foundation Portal</a>
         </div>
-        <p>This is an NFT minting DApp built on ZenChain Testnet. You can mint your own NFTs using ZenChain.</p>
+        <p>A responsive website showcasing Web3 technologies with interactive elements and blockchain integration.</p>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-title">
+          <i class="fab fa-ethereum"></i>
+          <a href="https://zenquest.zenchain.io?referral=Xt81EXFysqn730NeXr-so8J_pXiloBk3eEB_edepr80" target="_blank">ZenChain dApp</a>
+        </div>
+        <p>Decentralized application built on ZenChain ecosystem with smart contract integration and token swapping.</p>
       </div>
 
       <div class="project-card">
         <div class="project-title">
-          <i class="fas fa-cogs"></i>
-          <span>ZenQuest</span>
+          <i class="fas fa-code"></i>
+          <a href="#" target="_blank">NFT Gallery (In Development)</a>
         </div>
-        <p>ZenQuest is coming soon! A new blockchain experience on ZenChain, stay tuned!</p>
+        <p>Interactive NFT gallery with Web3 wallet connection and real-time blockchain data.</p>
       </div>
     </section>
-
-    <section>
+    
+    <section class="animate delay-3">
       <h2>Contact Me</h2>
       <ul>
         <li>
@@ -311,15 +339,9 @@
           <a href="https://github.com/zafransszzz" target="_blank">github.com/zafransszzz</a>
         </li>
         <li>
-          <i class="fas fa-briefcase"></i> Dework: 
-          <a href="https://app.dework.xyz/zafransszzz" target="_blank">dework.xyz/zafransszzz</a>
+          <i class="fab fa-twitter"></i> Twitter: 
+          <a href="https://x.com/zafransszz?t=WHDNLuvdJHZkZQD42Raa8w&s=09" target="_blank">x.com/zafransszz</a>
         </li>
         <li>
-          <i class="fas fa-globe"></i> Portfolio: 
-          <a href="https://zafransszzz.github.io" target="_blank">zafransszzz.github.io</a>
-        </li>
-      </ul>
-    </section>
-  </div>
-</body>
-</html>
+          <i class="fab fa-discord"></i> Discord: 
+          <a href="https://discord.com/users/1314832941137788928s" target="_blank">discord.com/users/131483294113778892
