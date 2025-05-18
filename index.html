@@ -1,129 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZenChain Overview</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenChain Litepaper Summary</title>
   <style>
     body {
+      background-color: #0e0e0e;
+      color: #d0ffd0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0a0f0a;
-      color: #d0f0d0;
-      line-height: 1.7;
-    }
-
-    header {
-      background-color: #1a281a;
       padding: 20px;
-      text-align: center;
+      line-height: 1.8;
     }
-
-    header img {
-      height: 60px;
+    h1, h2, h3 {
+      color: #84ff84;
     }
-
-    h1 {
-      color: #9cff9c;
-      margin-top: 10px;
+    img {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 100, 0.4);
     }
-
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-      background-color: #101c10;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 10px #00800044;
-    }
-
-    section img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
     a {
-      color: #79ff79;
+      color: #7eff7e;
+      text-decoration: none;
+    }
+    a:hover {
       text-decoration: underline;
     }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-      font-size: 14px;
+    .section {
+      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
+  <h1>ZenChain Litepaper Summary</h1>  <div class="section">
+    <h2>Overview</h2>
+    <img src="https://zenchain.io/assets/logo.svg" alt="ZenChain Logo" />
+    <p>ZenChain is a next-generation Layer 1 blockchain designed to provide seamless, trust-minimized cross-chain interoperability with major blockchain ecosystems such as Bitcoin, Ethereum, and beyond. It combines Bitcoin's robust security with Ethereum's programmability, aiming to facilitate secure and efficient cross-chain interactions. <a href="https://zenchain.io">Read More</a></p>
+  </div>  <div class="section">
+    <h2>Architecture</h2>
+    <img src="https://zenchain.io/assets/images/ecosystem.png" alt="Architecture Image" />
+    <h3>Cross-Liquidity Consensus Mechanism (CLCM)</h3>
+    <p>ZenChain employs the CLCM, a hybrid consensus model ensuring secure and efficient transactions via validator oversight. Validators produce and finalize blocks and are rewarded through staking, with slashing penalties applied for malicious behavior. <a href="https://www.scribd.com/document/862314956/Zenchain-Litepaper-Public-Release-2-1">More Info</a></p><h3>Cross-Chain Interoperability Module (CCIM)</h3>
+<p>The CCIM allows secure cross-chain transfers, facilitating transactions to and from ZenChain. It leverages multi-signature schemes like Schnorr, Taproot, or MPC/TSS. <a href="https://www.scribd.com/document/862314956/Zenchain-Litepaper-Public-Release-2-1">More Info</a></p>
 
-<header>
-  <a href="https://zenchain.io" target="_blank">
-    <img src="https://zenchain.io/assets/logo.png" alt="ZenChain Logo">
-  </a>
-  <h1>ZenChain Litepaper Summary</h1>
-</header>
+<h3>ZIP-20 Token Standard</h3>
+<p>ZIP-20 represents external assets within ZenChain. Bridge Facilitators handle direct transfers, while Custom Facilitators use alternative security mechanisms like over-collateralization. <a href="https://www.scribd.com/document/862314956/Zenchain-Litepaper-Public-Release-2-1">More Info</a></p>
 
-<main>
+  </div>  <div class="section">
+    <h2>Key Features</h2>
+    <img src="https://zenchain.io/assets/images/feature.png" alt="Key Features" />
+    <h3>EVM and Wasm Compatibility</h3>
+    <p>ZenChain supports EVM for Ethereum-compatible smart contracts and integrates Wasm via precompiles, bridging EVM and native Wasm runtimes. <a href="https://github.com/zenchain-protocol/litepaper">Details</a></p><h3>High Throughput & Low Latency</h3>
+<p>With 6-second block times and low fees, ZenChain is optimized for high-demand applications. <a href="https://zenchain.io">More Info</a></p>
 
-  <section>
-    <img src="https://zenchain.io/assets/why-zenchain.jpg" alt="Why ZenChain">
-    <h2>Why ZenChain?</h2>
-    <p>
-      <a href="https://zenchain.io" target="_blank">ZenChain</a> is a next-generation blockchain protocol tailored for the future of decentralized finance, gaming, and metaverse. Unlike traditional blockchains, ZenChain is built for performance, scalability, and real-world use cases, enabling a smooth and robust experience for developers and users.
-    </p>
-  </section>
+<h3>Security & Governance</h3>
+<p>Validators secure the network. Staking ZTC earns rewards. Protocol changes are managed via decentralized governance. <a href="https://www.scribd.com/document/862314956/Zenchain-Litepaper-Public-Release-2-1">Learn More</a></p>
 
-  <section>
-    <img src="https://zenchain.io/assets/consensus.jpg" alt="Consensus Mechanism">
-    <h2>Consensus Mechanism</h2>
-    <p>
-      ZenChain utilizes a hybrid consensus mechanism combining Proof-of-Stake (PoS) with Delegated Byzantine Fault Tolerance (dBFT). This enables fast block finality and eco-friendly validation without compromising on decentralization or network security.
-    </p>
-  </section>
+  </div>  <div class="section">
+    <h2>Ecosystem & Use Cases</h2>
+    <img src="https://zenchain.io/assets/images/zen-native-token.png" alt="Use Cases" />
+    <h3>Cross-Chain DeFi</h3>
+    <p>ZenChain enables DeFi apps to interact across blockchains, offering swaps, lending, insurance, and NFT integration. <a href="https://github.com/zenchain-protocol/litepaper">Explore</a></p><h3>NFT Integration</h3>
+<p>Mint, auction, and trade NFTs on ZenChain. Use NFTs as collateral in DeFi. <a href="https://github.com/zenchain-protocol/litepaper">Details</a></p>
 
-  <section>
-    <img src="https://zenchain.io/assets/ecosystem.jpg" alt="Ecosystem">
-    <h2>Ecosystem Design</h2>
-    <p>
-      The ecosystem of ZenChain is modular and inclusive. It supports EVM-compatible smart contracts, making it easy to port dApps from Ethereum. In addition, ZenChain integrates a native identity layer and on-chain governance system for transparent and community-driven evolution.
-    </p>
-  </section>
+<h3>Developer Tools</h3>
+<p>SDKs and APIs let devs build with Web3 compatibility, EVM tools, and Web3 RPC layer. <a href="https://docs.zenchain.io/docs/intro">Documentation</a></p>
 
-  <section>
-    <img src="https://zenchain.io/assets/tokenomics.jpg" alt="Tokenomics">
-    <h2>Tokenomics</h2>
-    <p>
-      The $ZEN token powers the entire ZenChain network. It is used for transaction fees, staking, governance, and accessing premium features. The supply is capped and designed with deflationary mechanics to incentivize long-term holding and network participation.
-    </p>
-  </section>
-
-  <section>
-    <img src="https://zenchain.io/assets/security.jpg" alt="Security">
-    <h2>Security & Scalability</h2>
-    <p>
-      ZenChain is built with security-first architecture. It supports layer-2 scaling, sidechains, and zero-knowledge proofs (zk-rollups) for maximum performance while protecting user data. This makes it ideal for DeFi, GameFi, and enterprise-grade applications.
-    </p>
-  </section>
-
-  <section>
-    <img src="https://zenchain.io/assets/community.jpg" alt="Community & Roadmap">
-    <h2>Community and Roadmap</h2>
-    <p>
-      ZenChain is a community-first project with active governance and developer incentives. Its roadmap includes a launchpad, bridges to major blockchains, and support for AI-powered smart contracts. The team emphasizes transparency and long-term impact over hype.
-    </p>
-  </section>
-
-</main>
-
-<footer>
-  Built with love by the ZenChain community. <br>
-  <a href="https://zenchain.io/litepaper.pdf" target="_blank">Read the full Litepaper</a>
-</footer>
-
+  </div>
 </body>
 </html>
